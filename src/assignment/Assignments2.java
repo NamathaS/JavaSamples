@@ -32,49 +32,50 @@ public class Assignments2 {
 		     
 	     switch(choice) {
 	     case 1:
-	    	 	ArmStrongNumber();
+	    	 	checkIfArmStrongNumber();
 	    	 	break;
 	     case 2:
-	    	 	FinonacciNumbers();
+	    	 	getFinonacciNumbers();
 	    	 	break;
 	     case 3:
-	    	 	PanlindromeNumber();
+	    	 	getPalindromeNumber();
 	    	 	break;
 	     case 4:
-	    	 	ForLoopSumOfNaturalNumbers();
+	    	 	getSumOfNaturalNumberWithForLoop();
 	    	 	break;
 	     case 5:
-	    	 	WhileLoopSumOfNaturalNumbers();
+	    	 	getSumOfNaturalNumberWithWhileLoop();
 	    	 	break;
 	     case 6:
-	    	 	NumberOfDigits();
+	    	 	getNumberOfDigits();
 	    	 	break;
 	     case 7:
-			    SimpleCalculator();
+			    simpleCalculator();
 			    break;
 	     case 8:
-			    CalculateElectricityBill();
+			    calculateElectricityBill();
 			    break;
 	     case 9:
-	    	 	CheckVowelsAndConsonants();
+	    	 	checkVowelsAndConsonants();
 	    	 	break;
 	     case 10:
-	    	 	PrimeNumbers();
+	    	 	getPrimeNumbers();
 	    	 	break;
 	     case 11:
-	    	 	LeftPatterns();
+	    	 	leftPatterns();
 	    	 	break; 
 	     case 12:
-	    	 	DiamondPattern();
+	    	 	diamondPattern();
 	    	 	break;
 	     default:
-	    	OutOfChoice();
+	    	 	outOfChoice();
 	     }
 	        in.close();
 		
 	}
-	public static void ArmStrongNumber() {
-		 int number , original;
+	public static void checkIfArmStrongNumber() {
+		 
+		int number , original;
 		 double remainder, result = 0;
 	        
 	        System.out.println("Enter a number to check :");
@@ -100,7 +101,8 @@ public class Assignments2 {
 	        }
 					
 	}
-	public static void FinonacciNumbers() {
+	public static void getFinonacciNumbers() {
+		
 		int limit, FirstNumber,SecondNumber,number;
 		
 		System.out.println("Please enter the limit");
@@ -108,19 +110,23 @@ public class Assignments2 {
 		
 		FirstNumber=0;
 		SecondNumber=1;
+		
 		System.out.println(FirstNumber);
 		System.out.println(SecondNumber);
 		
 		while(limit-2>0) {
 			number=FirstNumber+SecondNumber;
+			
 			System.out.println(number);
+			
 			FirstNumber=SecondNumber;
 			SecondNumber=number;
+			
 			limit--;
 		}
 
 	}
-	public static void PanlindromeNumber() {
+	public static void getPalindromeNumber() {
 		int len,i;
 		String original,reverse="";
 		
@@ -140,7 +146,7 @@ public class Assignments2 {
 			System.out.println(original+ " is not a palindrome");
 		
 	}
-	public static void ForLoopSumOfNaturalNumbers() {
+	public static void getSumOfNaturalNumberWithForLoop() {
 		int limit,sum=0,i;
 		
 		System.out.println("Please enter your limit");
@@ -152,7 +158,7 @@ public class Assignments2 {
 		System.out.println("Sum of natural numbers till " +limit+" is "+sum );
 		
 	}
-	public static void WhileLoopSumOfNaturalNumbers() {
+	public static void getSumOfNaturalNumberWithWhileLoop() {
 		int limit,sum=0,i;
 		
 		System.out.println("Please enter your limit");
@@ -167,7 +173,7 @@ public class Assignments2 {
 		System.out.println("Sum of natural numbers till " +limit+" is "+sum );
 		
 	}
-	public static void SimpleCalculator() {
+	public static void simpleCalculator() {
 		
 		double number1,number2,result=0;
 		char op;
@@ -198,7 +204,7 @@ public class Assignments2 {
 		
 		System.out.println(number1+" " +op+" "+number2+" = "+result);
 	}
-	public static void CalculateElectricityBill() {
+	public static void calculateElectricityBill() {
 		/*
 		 * Till 50 units
 		 * 			Unit charge - 2.60
@@ -245,7 +251,7 @@ public class Assignments2 {
 		
 		System.out.println("Total bill is "+total_bill);
 	}
-	public static void NumberOfDigits() {
+	public static void getNumberOfDigits() {
 		
 		 int count =0, number;	
         
@@ -261,7 +267,7 @@ public class Assignments2 {
 	    System.out.println("Number of digits is "+count);
 		
 	}
-	public static void CheckVowelsAndConsonants() {
+	public static void checkVowelsAndConsonants() {
 		char ch=0;
 		System.out.println("Please enter input");
 		ch=in.next().charAt(0);
@@ -283,7 +289,7 @@ public class Assignments2 {
 				System.out.println(ch +" is a consonant");
 		}
 	}
-	public static void PrimeNumbers() {
+	public static void getPrimeNumbers() {
 		
 		int number,count=0,i;
 		
@@ -300,7 +306,7 @@ public class Assignments2 {
 		else
 			System.out.println(number + " is not a prime number");
 	}
-	public static void LeftPatterns() {
+	public static void leftPatterns() {
 		
 		int number,i,j;
 		
@@ -318,7 +324,7 @@ public class Assignments2 {
 		}   
 		
 	}
-	public static void DiamondPattern() {
+	public static void diamondPattern() {
 		
 		int limit,i,j,space;
 		
@@ -363,7 +369,7 @@ public class Assignments2 {
 			System.out.println("");
 		}
 	}
-	public static void OutOfChoice() {  
+	public static void outOfChoice() {  
 	    System.out.print("Please enter choice from list");  
 	    System.out.flush();  
 	}  

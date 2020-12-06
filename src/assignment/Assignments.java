@@ -34,49 +34,49 @@ public class Assignments {
 		     
 	     switch(choice) {
 	     case 1:
-	    	AddTwoNumbers();
+	    	addTwoNumbers();
 	    	 break;
 	     case 2:
-	    	 MultiplyTwoNumbers();
+	    	 multiplyTwoNumbers();
 	    	 break;
 	     case 3:
-	    	 FindQuotientAndRemainder();
+	    	 findQuotientAndRemainder();
 	    	 break;
 	     case 4:
-	    	 CheckEvenOrOdd();
+	    	 checkEvenOrOdd();
 	    	 break;
 	     case 5:
-	    	 CalculateSimpleInterest();
+	    	 calculateSimpleInterest();
 	    	 break;
 	     case 6:
-		    CalculateSquareArea();
+		    calculateSquareArea();
 	    	 break;
 	     case 7:
-	    	 CalculateRectangleArea();
+	    	 calculateRectangleArea();
 	    	 break;
 	     case 8:
-	    	 SwapTwoNumbers();
+	    	 swapTwoNumbers();
 	    	 break;
 	     case 9:
-	    	 FindLargestNumber();
+	    	 findLargestNumber();
 	    	 break;
 	     case 10:
-	    	 CheckNegativeOrPositive();
+	    	 checkNegativeOrPositive();
 	    	 break;
 	     case 11:
-	    	 FindASCIIValue();
+	    	 findASCIIValue();
 	    	 break;
 	     default:
-	    	ClearScreen();
+	    	clearScreen();
 	     }
 		
 	}
-	public static void AddTwoNumbers() {
+	public static void addTwoNumbers() {
 					
-		System.out.println("Please enter your Number One");
+		System.out.println("Please enter your first number");
 		number1 = in.nextInt();
 		
-		System.out.println("Please enter your Number Two");
+		System.out.println("Please enter your second number");
 		number2 = in.nextInt();
 		
 		result = number1+number2;
@@ -84,7 +84,7 @@ public class Assignments {
 		System.out.println("Result of "+ number1 + " + "+ number2+" is "+ result);
 		}
 	
-	public static void MultiplyTwoNumbers() {
+	public static void multiplyTwoNumbers() {
 		
 		System.out.println("Please enter your Number One");
 		number1 = in.nextInt();
@@ -97,7 +97,7 @@ public class Assignments {
 		System.out.println("Result of "+ number1 + " x "+ number2+" is "+ result);
 	
 	}
-	public static void FindQuotientAndRemainder() {
+	public static void findQuotientAndRemainder() {
 				
 		System.out.println("Please enter your Number One");
 		number1 = in.nextInt();
@@ -108,8 +108,12 @@ public class Assignments {
 		System.out.println("Quotient of  "+ number1 + " / "+ number2+" is "+ (number1/number2));
 		System.out.println("And remainder is "+ (number1%number2));
 	}
-	public static void CheckEvenOrOdd() {
-		
+	public static void checkEvenOrOdd() {
+		/* If remainder is equal to 0 then it is an even number
+		 *  else it is a Odd number 
+		 *  Eg: 4%2 = 0 Even number 
+		 *   	5%2 = 1 – Odd number 
+		 */
 		System.out.println("Please enter number");
 		number1 = in.nextInt();
 		
@@ -118,7 +122,7 @@ public class Assignments {
 		else
 			System.out.println(number1+" is odd number");
 	}
-	public static void CalculateSimpleInterest() {
+	public static void calculateSimpleInterest() {
 		
 		double principleamount,rate,time;
 		
@@ -136,7 +140,7 @@ public class Assignments {
 		System.out.println("Simple interest is "+ result);
 	}
 	
-	public static void CalculateSquareArea() {
+	public static void calculateSquareArea() {
 		
 		System.out.println("Please enter side");
 		length=in.nextDouble();
@@ -145,7 +149,7 @@ public class Assignments {
 		
 		System.out.println("Area of square is  "+result);
 	}
-	public static void CalculateRectangleArea() {
+	public static void calculateRectangleArea() {
 		
 		System.out.println("Please enter length");
 		length=in.nextDouble();
@@ -157,7 +161,7 @@ public class Assignments {
 		
 		System.out.println("Area of reactangle is  "+result);
 	}
-	public static void SwapTwoNumbers() {
+	public static void swapTwoNumbers() {
 		
 		System.out.println("Please enter your first number ");
 		number1 = in.nextInt();
@@ -172,7 +176,7 @@ public class Assignments {
 		System.out.println("After swaping: first number is "+number1+ " and second number is " + number2);
 	}
 
-	public static void FindLargestNumber() {
+	public static void findLargestNumber() {
 		
 		int[] numbers = new int[5];
 		
@@ -195,7 +199,7 @@ public class Assignments {
 		System.out.println("Largest number is "+ number1);		
 		
 	}
-	public static void CheckNegativeOrPositive() {
+	public static void checkNegativeOrPositive() {
 		
 		System.out.println("Please enter your number ");
 		number1 = in.nextInt();
@@ -205,7 +209,7 @@ public class Assignments {
 		else
 			System.out.println("Entered number is negative");
 	}
-	public static void FindASCIIValue() {
+	public static void findASCIIValue() {
 		
 		char ch;
 		
@@ -216,7 +220,7 @@ public class Assignments {
 		
 		System.out.println(res);
 	}
-	public static void ClearScreen() {  
+	public static void clearScreen() {  
 	    System.out.print("\033[H\033[2J");  
 	    System.out.flush();  
 	}  
